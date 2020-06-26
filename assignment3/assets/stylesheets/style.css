@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*==================================
+
+Custom Styles
+
+===================================*/
+
+body{
+    font-family: 'Archivo Black', sans-serif;;
+    box-sizing: border-box;
+  
+    
+}
+
+
+
+
+/*================================
+
+Header Part
+
+=================================*/
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); 
+    align-items: baseline;
+    
+    
+}
+.logo{
+    margin-right: auto;
+    font-size: 40px;
+    color: white;
+    margin-left: 5%;
+    padding: 10px 0 10px 0;
+    font-weight: 500;
+    
+}
+.main-nav{
+    margin-right: 5%;
+}
+.main-nav li{
+    display: inline-block;
+    padding: 10px;
+}
+.main-nav a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #5EBD8B;
+    font-weight: 500;
+}
+
+#banner{
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    background: #6a3093;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.col-1{
+    flex: 1;
+    font-size: 45px;
+    font-weight: 400;
+    margin-left:5%;
+    margin-top: 13%;
+    line-height: 1.4em;
+    color: #FFFFFF;
+    
+}
+
+.col-2{
+    flex:1;
+    margin-top: 13%;
+    font-size: 18px;
+    line-height: 1.4em;
+    color: lightgray;
+   
+
+}
+.btn{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 5%;
+    background-color:#5EBD8B;
+    padding: 10px 30px 10px 30px;
+    border-radius: 27px;
+    color: white;
+}
+#banner hr{
+    display: inline-block;
+    margin-top: 13%;
+    margin-right:3% ;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    opacity: 50%;
+}
+
+
+/*===========================
+
+Container-1 Part
+
+============================*/
+
+.container-1{
+    display: flex;
+    margin: 5%;
+    line-height: 1.6em;
+}
+.col{
+    flex: 1;
+}
+.col-3 h3{
+font-size: 30px;
+
+padding: 0 0 40px 0;
+}
+.col-3 p{
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+    color: gray;
+    
+}
+.btn-2{
+    background-color: white;
+    color:gray;
+    border-radius: 27px;
+    border:1px solid rgb(150, 147, 147);
+}
+
+.container-1 hr{
+    margin-left: 8%;
+    margin-top: 1%;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+.col-4 li{
+    padding: 15px;
+    color: gray;
+    margin-left: 5%;
+}
+.col-4 i{
+    padding-right: 10px;
+    font-size: 20px;
+    color: #5EBD8B;
+}
+/*
+
+.col-4 li::before{
+    content:
+}
+
+*/
+
+
+/*=============================
+
+Contaniner-2 Part
+
+===============================*/
+.row{
+    display: flex;
+    
+}
+.column-1{
+    margin: 5% 5% 0 5%;
+}
+.column{
+    flex: 1;
+}
+.column-2{
+flex: 2;
+margin-top: 10%;
+}
+.column h3{
+font-size: 25px;
+padding: 0 20px 20px 0;
+}
+
+.column-2 p{
+line-height: 1.5em;
+padding: 20px 0 20px 0;
+color: gray;
+}
+.btn-3{
+    margin-left: 0;
+}
+.container-2 hr{
+ 
+    display: block;
+    width: 90%;
+    margin-top: 0;
+}
+
+.last-btn{
+    margin-left: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: gray;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+
+/*================================
+
+Container-3
+
+================================*/
+
+.container-3{
+    display: flex;
+    margin: 5%;
+  
+    line-height: 1.5em;
+    
+}
+.cr-3{
+    flex: 1;
+}
+.form h3{
+    font-size: 30px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
+.form p{
+    padding: 0 0 20px 0;
+    color: gray;
+}
+.form .p-1{
+    padding-bottom: 20px;
+    
+}
+.p-1 input{
+    padding:10px;
+    margin-right: 3%;
+    width: 100%;
+   
+}
+.form{
+    margin-right: 3%;
+}
+
+
+
+.p-1{
+    display: flex;
+    
+    
+}
+
+.p-2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+
+}
+ .f3{
+    padding: 20px 70px 90px 10px;
+
+
+}
+.button{
+margin: 2% auto;
+margin-left: 3%;
+margin-top: 5%;
+padding: 20px 30px 20px 30px;
+border-radius: 27px;
+color: gray;
+background-color: white;
+text-transform: uppercase;
+border: 2px solid gray;
+}
+
+.s-media{
+    margin-left: 5%;
+    margin-top: 3%;
+    color: gray;
+}
+.s-media li, .s-media i{
+    padding-bottom: 15px;
+    
+}
+.s-media i{
+    padding-right: 15px;
+    color: #5EBD8B;
+    font-size: 20px;
+}
+.hr{
+    width: 1px;
+    height:420px;
+    background-color: gray;
+    border: 1px solid gray;
+    opacity: 60%;
+    margin-top: 3%;
+}
+/*=========================
+
+Footer Part
+
+==========================*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: gray;
+}
